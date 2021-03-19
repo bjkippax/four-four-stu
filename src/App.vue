@@ -1,15 +1,23 @@
+<!-- TO DO
+  * Wire up so this displays data correctly
+  * Make a second project where can show off updating information, plenty of ToDo app tutorials to follow along with, similar functionality
+  * Remember, both projects need TS -->
+
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <NavBar></NavBar>
+  <!-- Drop down menu goes here -->
+  <PlayerCard></PlayerCard>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import NavBar from "./components/NavBar";
+import PlayerCard from "./components/PlayerCard";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    NavBar,
+    PlayerCard,
   }
 };
 </script>
